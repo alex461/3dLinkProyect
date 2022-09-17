@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "32081504203",
+    "project_id": "dlinkproyect",
+    "storage_bucket": "dlinkproyect.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:32081504203:android:b691f93652d25c2261384e",
+        "android_client_info": {
+          "package_name": "com.alexander.a3dlinkprueba"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "32081504203-8ah9uodga1fmdseqda9d83r7g8ocl400.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCIz_W7QtrnJdDh7H1-aUTWL-CuPNZXJSQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "32081504203-8ah9uodga1fmdseqda9d83r7g8ocl400.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
