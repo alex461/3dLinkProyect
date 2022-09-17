@@ -25,26 +25,25 @@ class FragmentLogin : BaseFragment<MyViewModel,FragmentLoginBinding>() {
         with(binding){
 
             btLogin.setOnClickListener {
-                    requireActivity().startNewActivity(HomeActivity::class.java)
 
-       //         if (etLogin.text.toString().isNotEmpty() && etPassword.text.toString().isNotEmpty()){
+                if (etLogin.text.toString().isNotEmpty() && etPassword.text.toString().isNotEmpty()){
 
+    
 
+                    FirebaseAuth.getInstance().signInWithEmailAndPassword(etLogin.text.toString(),etPassword.text.toString())
+                        .addOnCompleteListener {
 
-//                    FirebaseAuth.getInstance().signInWithEmailAndPassword(etLogin.text.toString(),etPassword.text.toString())
-//                        .addOnCompleteListener {
-//
-//                            if (it.isSuccessful){
-//
-//                                requireActivity().startNewActivity(HomeActivity::class.java)
-//
-//                            }else{
-//
-//                                requireActivity().showToast("ocurrio un Error")
-//                            }
-//                        }
-//
-           //    }
+                            if (it.isSuccessful){
+
+                                requireActivity().startNewActivity(HomeActivity::class.java)
+
+                            }else{
+
+                                requireActivity().showToast("ocurrio un Error")
+                            }
+                        }
+
+                }
 
 
 
